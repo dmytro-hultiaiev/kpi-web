@@ -193,6 +193,20 @@ input:focus::placeholder {
     color: #000;
 }
 
+.about__href__item {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.about__href {
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    color: #a7a7ab;
+}
+
+
 
 @media (max-width: 500px) {
     .button{
