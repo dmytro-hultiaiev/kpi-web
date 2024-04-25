@@ -31,26 +31,25 @@
                 <div class="profile__photo">
                     <img src="../image/avatar.jpg" alt="Photo" class="profile__photo__item">
                 </div>
-                <div class="username">User Name</div>
+                <div class="username" id = "username"></div>
 
                 <div class="profile__container">
                     <div class="profile__item">
                         <p class="profile__item__header">Email:</p>
-                        <p class="profile__item__info">some-email@gmail.com</p>
+                        <p class="profile__item__info" id = "email"></p>
                     </div>
                     <div class="profile__item">
                         <p class="profile__item__header">Number of modules:</p>
-                        <p class="profile__item__info">12</p>
+                        <p class="profile__item__info" id = "numberModules">12</p>
                     </div>
                     <div class="profile__item">
                         <p class="profile__item__header">Registration date:</p>
-                        <p class="profile__item__info">12.02.24</p>
+                        <p class="profile__item__info" id = "date"></p>
                     </div>
                 </div>
 
                 <div class="profile__options">
-                    <a href="change-password.html" class="profile__options__item">Change password</a>
-                    <a href="#" class="profile__options__item">Sign out</a>
+                    <a href="#" class="profile__options__item" onclick="signOut()">Sign out</a>
                 </div>
             </div>
         </main>
@@ -66,5 +65,9 @@
             </div>
         </footer>
     </div>
+
+    <script src="../js/controller/profile.js"></script>
+    <script src="../js/model.js"></script>
+
 </body>
 </html>

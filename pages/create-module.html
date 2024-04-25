@@ -38,31 +38,31 @@
                     <p class="page__header__text">Create module</p>
                 </div>
                 <form action="" class="module__name">
-                    <input type="text" class="module__name__input" placeholder="Enter module name">
+                    <input type="text" class="module__name__input" placeholder="Enter module name" id = "module_name">
                 </form>
-                <div class="terms__container">
+                <div class="terms__container" id = "terms__container">
                     <div class="terms__item">
                         <form action="" class="terms__form">
-                            <input type="text" class="terms__input" placeholder="Term">
-                            <input type="text" class="terms__input" placeholder="Definition">
+                            <input type="text" class="terms__input terms__name" placeholder="Term">
+                            <input type="text" class="terms__input terms__definition" placeholder="Definition">
                         </form>
                     </div>
                     <div class="terms__item">
                         <form action="" class="terms__form">
-                            <input type="text" class="terms__input" placeholder="Term">
-                            <input type="text" class="terms__input" placeholder="Definition">
+                            <input type="text" class="terms__input terms__name" placeholder="Term">
+                            <input type="text" class="terms__input terms__definition" placeholder="Definition">
                         </form>
                     </div>
                     <div class="terms__item">
                         <form action="" class="terms__form">
-                            <input type="text" class="terms__input" placeholder="Term">
-                            <input type="text" class="terms__input" placeholder="Definition">
+                            <input type="text" class="terms__input terms__name" placeholder="Term">
+                            <input type="text" class="terms__input terms__definition" placeholder="Definition">
                         </form>
                     </div>
                 </div>
                 <div class="terms__buttons">
-                    <a href="#" class="button">Add new term</a>
-                    <a href="#" class="button">Create module</a>
+                    <a href="#" class="button" onclick="addNewTerm()">Add new term</a>
+                    <a href="#" class="button" onclick="createModule()">Create module</a>
                 </div>
             </div>
         </main>
@@ -78,5 +78,10 @@
             </div>
         </footer>
     </div>
+
+    <script src="../js/controller/header.js"></script>
+    <script src="../js/controller/create-module.js"></script>
+    <script src="../js/model/model.js"></script>
+    
 </body>
 </html>

@@ -57,6 +57,10 @@ input:focus::placeholder {
     color: #34b847;
 }
 
+.authorization {
+    display: block;
+}
+
 .authorization__items{
     display: flex;
 }
@@ -98,6 +102,7 @@ input:focus::placeholder {
 }  
 
 .header__profile {
+    display: none;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -168,6 +173,7 @@ input:focus::placeholder {
 
 /* Modules */
 .module__status{
+    display: none;
     width: 8px;
     height: 8px;
     border-radius: 50%;

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="wrap">
@@ -32,11 +33,10 @@
                     <p class="page__header__text">SIGN UP</p>
                 </div>
                 <form action="" class="authorization__form">
-                    <input type="text" class="authorization__input" placeholder="Login">
-                    <input type="text" class="authorization__input" placeholder="Email">
-                    <input type="text" class="authorization__input" placeholder="Password">
-                    <input type="text" class="authorization__input" placeholder="Repeat password">
-                    <button class="authorization__button">Sign Up</button>
+                    <input type="text" class="authorization__input" id = "regLogin" placeholder="Login">
+                    <input type="text" class="authorization__input" id = "regEmail" placeholder="Email">
+                    <input type="text" class="authorization__input" id = "regPassword" placeholder="Password">
+                    <button class="authorization__button" type = "button" onclick="register()">Sign Up</button>
                 </form>
             </div>
         </main>
@@ -52,5 +52,9 @@
             </div>
         </footer>
     </div>
+
+    <script src="../js/controller/authorization.js"></script>
+    <script src="../js/model/model.js"></script>
+
 </body>
 </html>

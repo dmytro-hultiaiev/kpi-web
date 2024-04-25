@@ -36,18 +36,15 @@
             <div class="container">
                 <div class="module__header">
                     <div class="module__header__info">
-                        <div class="module__name">English words</div>
+                        <div class="module__name" id = "module__name"></div>
                         <div class="module__statistics">
                             <ul class="module__statistics__items">
-                                <li class="module__statistics__item">12 terms</li>
-                                <li class="module__statistics__item delimiter">|</li>
-                                <li class="module__statistics__item">01.01.2023</li>
-                                <li class="module__statistics__item delimiter">|</li>
+                                <li class="module__statistics__item" id = "module__statistics__item">12 terms</li>
                                 <div class="module__status green"></div>
                             </ul>
                         </div>
                     </div>
-                    <a href="#" class="button red">Delete module</a>
+                    <a href="#" class="button red" onclick="deleteModule()">Delete module</a>
                 </div>
 
                 <div class="study__modes">
@@ -82,40 +79,7 @@
 
                 <div class="terms">
                     <div class="page__header__text">Terms</div>
-                    <div class="terms__container">
-                        <div class="terms__item">
-                            <div class="terms__item__header">Term</div>
-                            <div class="terms__item__desc">Definition</div>
-                        </div>
-                        <div class="terms__item">
-                            <div class="terms__item__header">Term</div>
-                            <div class="terms__item__desc">Definition</div>
-                        </div>
-                        <div class="terms__item">
-                            <div class="terms__item__header">Term</div>
-                            <div class="terms__item__desc">Definition</div>
-                        </div>
-                        <div class="terms__item">
-                            <div class="terms__item__header">Term</div>
-                            <div class="terms__item__desc">Definition</div>
-                        </div>
-                        <div class="terms__item">
-                            <div class="terms__item__header">Term</div>
-                            <div class="terms__item__desc">Definition</div>
-                        </div>
-                        <div class="terms__item">
-                            <div class="terms__item__header">Term</div>
-                            <div class="terms__item__desc">Definition</div>
-                        </div>
-                        <div class="terms__item">
-                            <div class="terms__item__header">Term</div>
-                            <div class="terms__item__desc">Definition</div>
-                        </div>
-                        <div class="terms__item">
-                            <div class="terms__item__header">Term</div>
-                            <div class="terms__item__desc">Definition</div>
-                        </div>
-                    </div>
+                    <div class="terms__container" id = "terms__container"></div>
                 </div>
             </div>
         </main>
@@ -131,5 +95,10 @@
             </div>
         </footer>
     </div>
+
+    <script src="../js/controller/header.js"></script>
+    <script src="../js/controller/module.js"></script>
+    <script src="../js/model/model.js"></script>
+
 </body>
 </html>
